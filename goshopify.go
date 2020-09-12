@@ -534,18 +534,18 @@ type ListOptions struct {
 
 	// Page is used to specify a specific page to load.
 	// It is the deprecated way to do pagination.
-	Page                int       `url:"page,omitempty"`
-	Limit               int       `url:"limit,omitempty"`
-	SinceID             int64     `url:"since_id,omitempty"`
-	CreatedAtMin        time.Time `url:"created_at_min,omitempty"`
-	CreatedAtMax        time.Time `url:"created_at_max,omitempty"`
-	UpdatedAtMin        time.Time `url:"updated_at_min,omitempty"`
-	UpdatedAtMax        time.Time `url:"updated_at_max,omitempty"`
-	Order               string    `url:"order,omitempty"`
-	Fields              string    `url:"fields,omitempty"`
-	Vendor              string    `url:"vendor,omitempty"`
-	IDs                 []int64   `url:"ids,omitempty,comma"`
-	GeneralCollectionId int64     `url:"collection_id,omitempty"`
+	Page         int       `url:"page,omitempty"`
+	Limit        int       `url:"limit,omitempty"`
+	SinceID      int64     `url:"since_id,omitempty"`
+	CreatedAtMin time.Time `url:"created_at_min,omitempty"`
+	CreatedAtMax time.Time `url:"created_at_max,omitempty"`
+	UpdatedAtMin time.Time `url:"updated_at_min,omitempty"`
+	UpdatedAtMax time.Time `url:"updated_at_max,omitempty"`
+	Order        string    `url:"order,omitempty"`
+	Fields       string    `url:"fields,omitempty"`
+	Vendor       string    `url:"vendor,omitempty"`
+	IDs          []int64   `url:"ids,omitempty,comma"`
+	CollectionId int64     `url:"collection_id,omitempty"`
 }
 
 // General count options that can be used for most collection counts.
